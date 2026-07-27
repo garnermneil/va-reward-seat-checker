@@ -42,6 +42,13 @@
       const form = document.querySelector('#search-form');
       const button = form.querySelector('button');
       const status = document.querySelector('#status');
+      const startDate = document.querySelector('#start-date');
+      const endDate = document.querySelector('#end-date');
+
+      startDate.addEventListener('change', () => {
+        endDate.min = startDate.value;
+        endDate.value = startDate.value;
+      });
 
       form.addEventListener('submit', async (event) => {
         event.preventDefault();
