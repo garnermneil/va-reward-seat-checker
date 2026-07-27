@@ -447,13 +447,14 @@ async function scrape(url, range) {
   try {
     const data = [];
     const sourceUrls = monthUrls(url, range);
-    for (const monthUrl of sourceUrls) {
-      const page = await browser.newPage();
-      try {
+    const page = await browser.newPage();
+
+    try {
+      for (const monthUrl of sourceUrls) {
         data.push(...(await scrapeCalendar(page, monthUrl)));
-      } finally {
-        await page.close();
       }
+    } finally {
+      await page.close();
     }
 
     return { data, sourceUrls };
