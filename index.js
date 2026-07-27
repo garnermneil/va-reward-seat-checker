@@ -206,7 +206,7 @@ async function scrapeCalendar(page, url) {
 
 async function launchBrowser() {
   if (process.env.VERCEL) {
-    const chromium = require('@sparticuz/chromium');
+    const { default: chromium } = await import('@sparticuz/chromium');
     const { chromium: playwrightChromium } = require('playwright-core');
 
     return playwrightChromium.launch({
