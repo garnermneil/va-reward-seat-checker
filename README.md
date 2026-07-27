@@ -53,3 +53,9 @@ node index.js \
   --html-output reward-seat-summary.html \
   > rewards.json
 ```
+
+## Web interface
+
+The Vercel web interface serves a start form at `/`. Enter the number of nights, earliest outbound date, and latest return date. The form calls `/api/summary`, then redirects to `/results.html` with the best combined value and all cabin combinations.
+
+Deploy the repository to Vercel. The serverless function uses `playwright-core` and `@sparticuz/chromium`; no additional Vercel configuration is required.

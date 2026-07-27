@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reward Seat Checker</title>
+    <style>
+      body { margin: 0; background: #f5f3f6; color: #211a24; font-family: Arial, sans-serif; }
+      main { box-sizing: border-box; max-width: 640px; margin: 48px auto; padding: 32px; background: #fff; border-radius: 12px; }
+      h1 { margin-top: 0; color: #5b056a; }
+      form { display: grid; gap: 20px; }
+      label { display: grid; gap: 8px; font-weight: bold; }
+      input { box-sizing: border-box; width: 100%; padding: 12px; border: 1px solid #a79daa; border-radius: 4px; font: inherit; }
+      button { padding: 14px; border: 0; border-radius: 4px; background: #5b056a; color: #fff; font: inherit; font-weight: bold; cursor: pointer; }
+      button:disabled { cursor: wait; opacity: 0.7; }
+      #status { min-height: 24px; margin-bottom: 0; }
+      .error { color: #b00020; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Virgin Atlantic reward seat checker</h1>
+      <p>Find the lowest-points outbound and return combination for Manchester to Orlando.</p>
+      <form id="search-form">
+        <label>
+          Nights away
+          <input id="slot-length" name="slotLength" type="number" min="1" value="7" required>
+        </label>
+        <label>
+          Earliest outbound date
+          <input id="start-date" name="startDate" type="date" required>
+        </label>
+        <label>
+          Latest return date
+          <input id="end-date" name="endDate" type="date" required>
+        </label>
+        <button type="submit">Find reward seats</button>
+      </form>
+      <p id="status" role="status"></p>
+    </main>
+    <script>
+      const form = document.querySelector('#search-form');
+      const button = form.querySelector('button');
+      const status = document.querySelector('#status');
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        button.disabled = true;
+        status.className = '';
+        status.textContent = 'Checking reward-seat availability. This can take a minute.';
+
+        const query = new URLSearchParams(new FormData(form));
+        try {
+          const response = await fetch(`/api/summary?${query}`);
+          const result = await response.json();
+          if (!response.ok) {
+            throw new Error(result.error || 'Unable to retrieve reward-seat results.');
+          }
+
+          sessionStorage.setItem('reward-seat-summary', JSON.stringify(result));
+          window.location.assign('/results.html');
+        } catch (error) {
+          status.className = 'error';
+          status.textContent = error.message;
+          button.disabled = false;
+        }
+      });
+    </script>
+  </body>
+</html>

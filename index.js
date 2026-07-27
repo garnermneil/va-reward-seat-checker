@@ -1,4 +1,3 @@
-const { chromium } = require('playwright');
 const { writeFile } = require('node:fs/promises');
 
 const defaultUrl =
@@ -33,6 +32,29 @@ function parseDate(value, name) {
   }
 
   return date;
+}
+
+function getAnalysisOptions(slotLength, startDate, endDate) {
+  if (slotLength === undefined || startDate === undefined || endDate === undefined) {
+    throw new Error('--slot-length, --start-date, and --end-date must be used together.');
+  }
+
+  if (!Number.isSafeInteger(slotLength) || slotLength < 1) {
+    throw new Error('--slot-length must be a positive integer.');
+  }
+
+  const parsedStartDate = parseDate(startDate, '--start-date');
+  const parsedEndDate = parseDate(endDate, '--end-date');
+  if (parsedStartDate > parsedEndDate) {
+    throw new Error('--start-date must not be after --end-date.');
+  }
+
+  return {
+    slotLength,
+    startDate,
+    endDate,
+    range: { startDate: parsedStartDate, endDate: parsedEndDate },
+  };
 }
 
 function parseArguments(args) {
@@ -73,21 +95,7 @@ function parseArguments(args) {
 
   const analysisOptions = [options.slotLength, options.startDate, options.endDate];
   if (analysisOptions.some((option) => option !== undefined)) {
-    if (analysisOptions.some((option) => option === undefined)) {
-      throw new Error('--slot-length, --start-date, and --end-date must be used together.');
-    }
-
-    if (!Number.isSafeInteger(options.slotLength) || options.slotLength < 1) {
-      throw new Error('--slot-length must be a positive integer.');
-    }
-
-    const startDate = parseDate(options.startDate, '--start-date');
-    const endDate = parseDate(options.endDate, '--end-date');
-    if (startDate > endDate) {
-      throw new Error('--start-date must not be after --end-date.');
-    }
-
-    options.range = { startDate, endDate };
+    Object.assign(options, getAnalysisOptions(options.slotLength, options.startDate, options.endDate));
   }
 
   if (options.htmlOutput && !options.range) {
@@ -194,6 +202,22 @@ async function scrapeCalendar(page, url) {
   } finally {
     apiResponse.catch(() => {});
   }
+}
+
+async function launchBrowser() {
+  if (process.env.VERCEL) {
+    const chromium = require('@sparticuz/chromium');
+    const { chromium: playwrightChromium } = require('playwright-core');
+
+    return playwrightChromium.launch({
+      args: chromium.args,
+      executablePath: await chromium.executablePath(),
+      headless: chromium.headless,
+    });
+  }
+
+  const { chromium } = require('playwright');
+  return chromium.launch({ headless: true });
 }
 
 function addDays(date, days) {
@@ -417,7 +441,7 @@ function renderEmailHtml(result) {
 }
 
 async function scrape(url, range) {
-  const browser = await chromium.launch({ headless: true });
+  const browser = await launchBrowser();
 
   try {
     const data = [];
@@ -437,13 +461,7 @@ async function scrape(url, range) {
   }
 }
 
-async function main() {
-  const options = parseArguments(process.argv.slice(2));
-  if (options.help) {
-    process.stdout.write(`${usage()}\n`);
-    return;
-  }
-
+async function createSummary(options) {
   validateUrl(options.url);
   const { data, sourceUrls } = await scrape(options.url, options.range);
   const result = {
@@ -467,6 +485,17 @@ async function main() {
     };
   }
 
+  return result;
+}
+
+async function main() {
+  const options = parseArguments(process.argv.slice(2));
+  if (options.help) {
+    process.stdout.write(`${usage()}\n`);
+    return;
+  }
+
+  const result = await createSummary(options);
   if (options.htmlOutput) {
     await writeFile(options.htmlOutput, renderEmailHtml(result), 'utf8');
   }
@@ -474,7 +503,11 @@ async function main() {
   process.stdout.write(`${JSON.stringify(result, null, 2)}\n`);
 }
 
-main().catch((error) => {
-  console.error(`Unable to scrape reward flight results: ${error.message}`);
-  process.exitCode = 1;
-});
+if (require.main === module) {
+  main().catch((error) => {
+    console.error(`Unable to scrape reward flight results: ${error.message}`);
+    process.exitCode = 1;
+  });
+}
+
+module.exports = { createSummary, defaultUrl, getAnalysisOptions };

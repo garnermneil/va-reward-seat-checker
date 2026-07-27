@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reward Seat Results</title>
+    <style>
+      body { margin: 0; background: #f5f3f6; color: #211a24; font-family: Arial, sans-serif; }
+      main { box-sizing: border-box; max-width: 960px; margin: 48px auto; padding: 32px; background: #fff; border-radius: 12px; }
+      h1, h2 { color: #5b056a; }
+      a { color: #5b056a; }
+      .best { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+      .card, .total { padding: 16px; border: 1px solid #d7d0d9; border-radius: 6px; }
+      .total { margin-top: 16px; background: #5b056a; color: #fff; font-size: 24px; font-weight: bold; text-align: center; }
+      .points { display: block; margin-top: 8px; font-size: 22px; font-weight: bold; }
+      .badge { display: inline-block; margin-top: 8px; padding: 3px 7px; background: #d9f2e6; color: #17633a; font-size: 12px; font-weight: bold; }
+      table { width: 100%; border-collapse: collapse; font-size: 14px; }
+      th, td { padding: 10px; border: 1px solid #d7d0d9; text-align: left; vertical-align: top; }
+      th { background: #eee9f0; }
+      @media (max-width: 640px) { main { margin: 0; border-radius: 0; } .best { grid-template-columns: 1fr; } table { font-size: 12px; } th, td { padding: 6px; } }
+    </style>
+  </head>
+  <body>
+    <main id="app"></main>
+    <script>
+      const result = JSON.parse(sessionStorage.getItem('reward-seat-summary') || 'null');
+      const app = document.querySelector('#app');
+      const formatter = new Intl.NumberFormat('en-GB');
+      const dateFormatter = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+
+      function formatDate(date) {
+        return dateFormatter.format(new Date(`${date}T00:00:00Z`));
+      }
+
+      function formatPoints(points) {
+        return `${formatter.format(points)} points`;
+      }
+
+      function addText(parent, tag, text) {
+        const element = document.createElement(tag);
+        element.textContent = text;
+        parent.append(element);
+        return element;
+      }
+
+      function renderFlight(parent, title, flight) {
+        const card = document.createElement('section');
+        card.className = 'card';
+        addText(card, 'strong', title);
+        addText(card, 'div', `${flight.cabin} · ${formatDate(flight.date)}`);
+        const points = addText(card, 'span', formatPoints(flight.points));
+        points.className = 'points';
+        if (flight.isSaverAward) {
+          const badge = addText(card, 'span', 'Saver reward');
+          badge.className = 'badge';
+        }
+        parent.append(card);
+      }
+
+      if (!result?.bestFlights) {
+        addText(app, 'h1', 'No results available');
+        addText(app, 'p', 'Start a new search to view reward-seat availability.');
+        const link = addText(app, 'a', 'Start a search');
+        link.href = '/';
+      } else {
+        const { bestFlights } = result;
+        const best = bestFlights.lowestConfiguration;
+        addText(app, 'h1', 'Reward seat results');
+        addText(app, 'p', `${bestFlights.stayLengthDays}-night stay between ${formatDate(bestFlights.range.startDate)} and ${formatDate(bestFlights.range.endDate)}.`);
+
+        if (best) {
+          const bestGrid = document.createElement('div');
+          bestGrid.className = 'best';
+          renderFlight(bestGrid, 'Outbound', best.outbound);
+          renderFlight(bestGrid, 'Return', best.return);
+          app.append(bestGrid);
+          const total = addText(app, 'div', `Best combined value: ${formatPoints(best.totalPoints)}`);
+          total.className = 'total';
+        }
+
+        addText(app, 'h2', 'All cabin combinations');
+        const table = document.createElement('table');
+        table.innerHTML = '<thead><tr><th>Outbound</th><th>Return</th><th>Outbound date</th><th>Return date</th><th>Flight points</th><th>Total</th></tr></thead>';
+        const body = document.createElement('tbody');
+        Object.values(bestFlights.configurations).forEach((configuration) => {
+          const row = document.createElement('tr');
+          const cells = configuration.best
+            ? [configuration.best.outbound.cabin, configuration.best.return.cabin, formatDate(configuration.best.outbound.date), formatDate(configuration.best.return.date), `${formatPoints(configuration.best.outbound.points)} + ${formatPoints(configuration.best.return.points)}`, formatPoints(configuration.best.totalPoints)]
+            : [configuration.outboundCabin, configuration.returnCabin, 'Not available', '', '', ''];
+          cells.forEach((cell) => addText(row, 'td', cell));
+          body.append(row);
+        });
+        table.append(body);
+        app.append(table);
+
+        const sources = document.createElement('p');
+        sources.append('Sources: ');
+        result.sourceUrls.forEach((url, index) => {
+          const link = document.createElement('a');
+          link.href = url;
+          const params = new URL(url).searchParams;
+          link.textContent = `${params.get('year')}-${params.get('month')}`;
+          sources.append(link);
+          if (index < result.sourceUrls.length - 1) sources.append(' · ');
+        });
+        app.append(sources);
+      }
+    </script>
+  </body>
+</html>

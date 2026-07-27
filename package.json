@@ -10,6 +10,10 @@
     "scrape": "node index.js"
   },
   "dependencies": {
+    "@sparticuz/chromium": "^149.0.0",
+    "playwright-core": "^1.62.0"
+  },
+  "devDependencies": {
     "playwright": "^1.62.0"
   }
 }
