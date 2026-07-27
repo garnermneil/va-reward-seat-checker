@@ -10,7 +10,8 @@
     "scrape": "node index.js",
     "start": "node server.js",
     "start:email": "node --env-file=.env.local server.js",
-    "send:email": "node --env-file=.env.local send-email.js"
+    "send:email": "node --env-file=.env.local send-email.js",
+    "watch": "node watch.js"
   },
   "dependencies": {
     "@sparticuz/chromium": "149.0.0",

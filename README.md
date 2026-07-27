@@ -87,4 +87,19 @@ npm run send:email -- \
   --end-date 2027-03-15
 ```
 
+## Local price alerts
+
+Run a local watcher to check immediately and then every 10 minutes:
+
+```sh
+npm run watch -- \
+  --slot-length 7 \
+  --start-date 2027-02-25 \
+  --end-date 2027-03-15
+```
+
+The first check records a baseline in `.reward-seat-watch-state.json`. When a later check finds a lower combined points total, the watcher creates an `alerts/reward-seat-low-*.json` file and shows a macOS notification. Both generated locations are ignored by Git.
+
+Use `--once` to run only one check, for example when testing the watcher.
+
 Deploy the repository to Vercel. The serverless function uses `playwright-core` and `@sparticuz/chromium`; no additional Vercel configuration is required.
