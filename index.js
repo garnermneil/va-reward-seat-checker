@@ -474,17 +474,37 @@ async function createSummary(options) {
   };
 
   if (options.range) {
+    const stayLengths = [...new Set(options.stayLengths ?? [options.slotLength])];
+    if (
+      stayLengths.some(
+        (stayLength) => !Number.isSafeInteger(stayLength) || stayLength < 1,
+      )
+    ) {
+      throw new Error('Stay lengths must be positive integers.');
+    }
+
+    const bestFlightsByStayLength = Object.fromEntries(
+      stayLengths.map((stayLength) => [
+        stayLength,
+        {
+          stayLengthDays: stayLength,
+          range: {
+            startDate: options.startDate,
+            endDate: options.endDate,
+          },
+          ...findBestFlights(data, stayLength, {
+            startDate: options.startDate,
+            endDate: options.endDate,
+          }),
+        },
+      ]),
+    );
     result.bestFlights = {
-      stayLengthDays: options.slotLength,
-      range: {
-        startDate: options.startDate,
-        endDate: options.endDate,
-      },
-      ...findBestFlights(data, options.slotLength, {
-        startDate: options.startDate,
-        endDate: options.endDate,
-      }),
+      ...bestFlightsByStayLength[options.slotLength],
     };
+    if (stayLengths.length > 1) {
+      result.bestFlightsByStayLength = bestFlightsByStayLength;
+    }
   }
 
   return result;

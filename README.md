@@ -98,7 +98,7 @@ npm run watch -- \
   --end-date 2027-03-15
 ```
 
-The first check records a baseline in `.reward-seat-watch-state.json`. When a later check finds a lower combined points total, the watcher creates an `alerts/reward-seat-low-*.json` file and shows a macOS notification. Both generated locations are ignored by Git.
+The watcher checks the requested duration plus one night and minus one night. It tracks the cheapest combined trip plus the lowest Economy, Premium, and Upper Class price in each direction for every duration. The first check records a baseline in `.reward-seat-watch-state.json`. When a later check finds a lower combined or cabin-class price, the watcher creates an `alerts/reward-seat-low-*.json` file and shows a macOS notification. Both generated locations are ignored by Git.
 
 Use `--once` to run only one check, for example when testing the watcher.
 
