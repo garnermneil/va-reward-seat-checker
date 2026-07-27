@@ -112,6 +112,8 @@ function seatClassPrices(bestFlights) {
 function currentDurationResult(bestFlights) {
   return {
     lowestConfiguration: bestFlights.lowestConfiguration,
+    economyRoundTrip:
+      bestFlights.configurations.economyOutboundeconomyReturn.best,
     seatClassPrices: seatClassPrices(bestFlights),
   };
 }
@@ -137,6 +139,7 @@ function evaluateDuration(previous, current, nights) {
         initialized: true,
         lastResult: current,
         lowestConfiguration: current.lowestConfiguration,
+        lowestEconomyRoundTrip: current.economyRoundTrip,
         lowestSeatClassPrices: current.seatClassPrices,
       },
       movements: [],
@@ -165,6 +168,26 @@ function evaluateDuration(previous, current, nights) {
     });
   }
 
+  const lowestEconomyRoundTrip =
+    current.economyRoundTrip &&
+    (!previous.lowestEconomyRoundTrip ||
+      current.economyRoundTrip.totalPoints < previous.lowestEconomyRoundTrip.totalPoints)
+      ? current.economyRoundTrip
+      : previous.lowestEconomyRoundTrip;
+
+  if (
+    current.economyRoundTrip &&
+    previous.lowestEconomyRoundTrip &&
+    current.economyRoundTrip.totalPoints < previous.lowestEconomyRoundTrip.totalPoints
+  ) {
+    movements.push({
+      type: 'economy-round-trip',
+      nights,
+      previous: previous.lowestEconomyRoundTrip,
+      current: current.economyRoundTrip,
+    });
+  }
+
   const lowestSeatClassPrices = {};
   for (const [seatClass, currentFlight] of Object.entries(current.seatClassPrices)) {
     const previousFlight = previous.lowestSeatClassPrices?.[seatClass];
@@ -189,6 +212,7 @@ function evaluateDuration(previous, current, nights) {
       initialized: true,
       lastResult: current,
       lowestConfiguration,
+      lowestEconomyRoundTrip,
       lowestSeatClassPrices,
     },
     movements,
@@ -199,6 +223,9 @@ function evaluateDuration(previous, current, nights) {
 function formatMovement(movement) {
   if (movement.type === 'combined') {
     return `${movement.nights}-night combined: ${movement.previous.totalPoints} to ${movement.current.totalPoints} points`;
+  }
+  if (movement.type === 'economy-round-trip') {
+    return `${movement.nights}-night Economy return trip: ${movement.previous.totalPoints} to ${movement.current.totalPoints} points`;
   }
 
   return `${movement.nights}-night ${movement.seatClass}: ${movement.previous.points} to ${movement.current.points} points`;
