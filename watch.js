@@ -78,6 +78,19 @@ function alertFileName(timestamp) {
   return `${alertDirectory}/reward-seat-low-${timestamp.replaceAll(':', '-')}.json`;
 }
 
+function formatResult(timestamp, configuration) {
+  if (!configuration) {
+    return `[${timestamp}] Last run: no available return-trip configuration found.`;
+  }
+
+  return [
+    `[${timestamp}] Last run:`,
+    `${configuration.outbound.cabin} outbound on ${configuration.outbound.date} (${configuration.outbound.points} points)`,
+    `+ ${configuration.return.cabin} return on ${configuration.return.date} (${configuration.return.points} points)`,
+    `= ${configuration.totalPoints} points.`,
+  ].join(' ');
+}
+
 async function checkForNewLow(options) {
   const summary = await createSummary({ url: defaultUrl, ...options });
   const current = summary.bestFlights.lowestConfiguration;
@@ -86,7 +99,7 @@ async function checkForNewLow(options) {
 
   if (!current) {
     await writeFile(stateFile, `${JSON.stringify({ ...state, lastCheckedAt: now }, null, 2)}\n`);
-    console.log('No available return-trip configuration found.');
+    console.log(formatResult(now, null));
     return;
   }
 
@@ -105,7 +118,8 @@ async function checkForNewLow(options) {
         2,
       )}\n`,
     );
-    console.log(`Baseline recorded: ${current.totalPoints} points.`);
+    console.log(formatResult(now, current));
+    console.log('Baseline recorded.');
     return;
   }
 
@@ -118,7 +132,7 @@ async function checkForNewLow(options) {
   };
   await writeFile(stateFile, `${JSON.stringify(nextState, null, 2)}\n`);
 
-  console.log(`Current best value: ${current.totalPoints} points.`);
+  console.log(formatResult(now, current));
   if (!isNewLow) {
     return;
   }
