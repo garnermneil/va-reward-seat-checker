@@ -1,1 +1,1 @@
-# va-rweard-seat-checker
+# va-reward-seat-checker
