@@ -1,0 +1,1825 @@
+{
+  "sourceUrl": "https://www.virginatlantic.com/reward-flight-finder/results/month?origin=MAN&destination=MCO&month=10&year=2026",
+  "sourceUrls": [
+    "https://www.virginatlantic.com/reward-flight-finder/results/month?origin=MAN&destination=MCO&month=02&year=2027",
+    "https://www.virginatlantic.com/reward-flight-finder/results/month?origin=MAN&destination=MCO&month=03&year=2027"
+  ],
+  "scrapedAt": "2026-07-27T13:28:38.225Z",
+  "data": [
+    {
+      "date": "2027-02-01",
+      "minPrice": 226.53,
+      "currency": "GBP",
+      "minAwardPointsTotal": 10500,
+      "seats": {
+        "awardEconomy": {
+          "cabinPointsValue": 0,
+          "isSaverAward": false,
+          "cabinClassSeatCount": 100,
+          "cabinClassSeatCountString": "100+"
+        },
+        "awardComfortPlusPremiumEconomy": {
+          "cabinPointsValue": 0,
+          "isSaverAward": false,
+          "cabinClassSeatCount": 50,
+          "cabinClassSeatCountString": "50+"
+        },
+        "awardBusiness": {
+          "cabinPointsValue": 0,
+          "isSaverAward": false,
+          "cabinClassSeatCount": 50,
+          "cabinClassSeatCountString": "50+"
+        }
+      },
+      "pointsDays": [
+        {
+          "date": "2027-02-01",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 62000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-02",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 17500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 59000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 17500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-03",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 59000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-04",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 22000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 60000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 22000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-05",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 82000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 82000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-06",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 90000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 90000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 96000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-07",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 74000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 74000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-08",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 60000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-09",
+          "minPrice": 717.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 29000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 66000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 32000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-10",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 59000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-11",
+          "minPrice": 717.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 29000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 84000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 35000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-12",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 88000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 88000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 90000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 190000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-13",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 100000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 130000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-14",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 55000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 82000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 55000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-15",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 59000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-16",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 60000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-17",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 59000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-18",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 18500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 59000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 18500,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-19",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 44000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 64000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 44000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-20",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 150000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-21",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 64000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 64000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 76000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-22",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 60000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-23",
+          "minPrice": 717.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 29000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 59000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-24",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 59000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-25",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 59000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-26",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 62000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 64000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 62000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-27",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 64000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-02-28",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 55000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 66000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 55000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        }
+      ],
+      "month": "FEBRUARY",
+      "year": "2027",
+      "totalAwardsSeatsForMonth": 200,
+      "originPrettyName": null,
+      "destinationPrettyName": null
+    },
+    {
+      "date": "2027-03-01",
+      "minPrice": 226.53,
+      "currency": "GBP",
+      "minAwardPointsTotal": 10500,
+      "seats": {
+        "awardEconomy": {
+          "cabinPointsValue": 0,
+          "isSaverAward": false,
+          "cabinClassSeatCount": 100,
+          "cabinClassSeatCountString": "100+"
+        },
+        "awardComfortPlusPremiumEconomy": {
+          "cabinPointsValue": 0,
+          "isSaverAward": false,
+          "cabinClassSeatCount": 50,
+          "cabinClassSeatCountString": "50+"
+        },
+        "awardBusiness": {
+          "cabinPointsValue": 0,
+          "isSaverAward": false,
+          "cabinClassSeatCount": 50,
+          "cabinClassSeatCountString": "50+"
+        }
+      },
+      "pointsDays": [
+        {
+          "date": "2027-03-01",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 64000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 110000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-02",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 14500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 59000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 14500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-03",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 59000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-04",
+          "minPrice": 717.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 29000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 62000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 52000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-05",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 45000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 66000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 45000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-06",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 150000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-07",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 66000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 66000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 250000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-08",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 59000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-09",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 17500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 59000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 17500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-10",
+          "minPrice": 717.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 29000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 59000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 66000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-11",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 62000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-12",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 64000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 64000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 66000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-13",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 64000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-14",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 72000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 72000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 96000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-15",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 10500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 150000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 10500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-16",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 17500,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 68000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 17500,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 29000,
+              "isSaverAward": true,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-17",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 72000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 72000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 84000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 135000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-18",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 90000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 90000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 165000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-19",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 100000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 110000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 185000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-20",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 100000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 150000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 350000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-21",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 88000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 88000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 105000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 195000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-22",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 100000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 105000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 195000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-23",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 130000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 130000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 155000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 200000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-24",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 150000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 150000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 165000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 195000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-25",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 110000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 150000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 110000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 195000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-26",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 150000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 150000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 210000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 195000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-27",
+          "minPrice": 455.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 105000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 145000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 105000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 155000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-28",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 105000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 105000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 105000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 210000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-29",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 100000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 100000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 195000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-30",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 26000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 26000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 78000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 195000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        },
+        {
+          "date": "2027-03-31",
+          "minPrice": 226.53,
+          "currency": "GBP",
+          "minAwardPointsTotal": 92000,
+          "seats": {
+            "awardEconomy": {
+              "cabinPointsValue": 92000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardComfortPlusPremiumEconomy": {
+              "cabinPointsValue": 250000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            },
+            "awardBusiness": {
+              "cabinPointsValue": 320000,
+              "isSaverAward": false,
+              "cabinClassSeatCount": 9,
+              "cabinClassSeatCountString": "9+"
+            }
+          }
+        }
+      ],
+      "month": "MARCH",
+      "year": "2027",
+      "totalAwardsSeatsForMonth": 200,
+      "originPrettyName": null,
+      "destinationPrettyName": null
+    }
+  ],
+  "bestFlights": {
+    "stayLengthDays": 7,
+    "range": {
+      "startDate": "2027-02-25",
+      "endDate": "2027-03-15"
+    },
+    "lowestConfiguration": {
+      "outbound": {
+        "cabin": "Premium",
+        "date": "2027-02-27",
+        "points": 10500,
+        "availableSeats": "9+",
+        "isSaverAward": true
+      },
+      "return": {
+        "cabin": "Premium",
+        "date": "2027-03-06",
+        "points": 10500,
+        "availableSeats": "9+",
+        "isSaverAward": true
+      },
+      "totalPoints": 21000
+    },
+    "configurations": {
+      "economyOutboundeconomyReturn": {
+        "outboundCabin": "Economy",
+        "returnCabin": "Economy",
+        "best": {
+          "outbound": {
+            "cabin": "Economy",
+            "date": "2027-03-02",
+            "points": 59000,
+            "availableSeats": "9+",
+            "isSaverAward": false
+          },
+          "return": {
+            "cabin": "Economy",
+            "date": "2027-03-09",
+            "points": 59000,
+            "availableSeats": "9+",
+            "isSaverAward": false
+          },
+          "totalPoints": 118000
+        }
+      },
+      "economyOutboundpremiumReturn": {
+        "outboundCabin": "Economy",
+        "returnCabin": "Premium",
+        "best": {
+          "outbound": {
+            "cabin": "Economy",
+            "date": "2027-03-08",
+            "points": 59000,
+            "availableSeats": "9+",
+            "isSaverAward": false
+          },
+          "return": {
+            "cabin": "Premium",
+            "date": "2027-03-15",
+            "points": 10500,
+            "availableSeats": "9+",
+            "isSaverAward": true
+          },
+          "totalPoints": 69500
+        }
+      },
+      "economyOutboundupperClassReturn": {
+        "outboundCabin": "Economy",
+        "returnCabin": "Upper Class",
+        "best": {
+          "outbound": {
+            "cabin": "Economy",
+            "date": "2027-02-25",
+            "points": 59000,
+            "availableSeats": "9+",
+            "isSaverAward": false
+          },
+          "return": {
+            "cabin": "Upper Class",
+            "date": "2027-03-04",
+            "points": 29000,
+            "availableSeats": "9+",
+            "isSaverAward": true
+          },
+          "totalPoints": 88000
+        }
+      },
+      "premiumOutboundeconomyReturn": {
+        "outboundCabin": "Premium",
+        "returnCabin": "Economy",
+        "best": {
+          "outbound": {
+            "cabin": "Premium",
+            "date": "2027-03-01",
+            "points": 10500,
+            "availableSeats": "9+",
+            "isSaverAward": true
+          },
+          "return": {
+            "cabin": "Economy",
+            "date": "2027-03-08",
+            "points": 59000,
+            "availableSeats": "9+",
+            "isSaverAward": false
+          },
+          "totalPoints": 69500
+        }
+      },
+      "premiumOutboundpremiumReturn": {
+        "outboundCabin": "Premium",
+        "returnCabin": "Premium",
+        "best": {
+          "outbound": {
+            "cabin": "Premium",
+            "date": "2027-02-27",
+            "points": 10500,
+            "availableSeats": "9+",
+            "isSaverAward": true
+          },
+          "return": {
+            "cabin": "Premium",
+            "date": "2027-03-06",
+            "points": 10500,
+            "availableSeats": "9+",
+            "isSaverAward": true
+          },
+          "totalPoints": 21000
+        }
+      },
+      "premiumOutboundupperClassReturn": {
+        "outboundCabin": "Premium",
+        "returnCabin": "Upper Class",
+        "best": {
+          "outbound": {
+            "cabin": "Premium",
+            "date": "2027-02-25",
+            "points": 10500,
+            "availableSeats": "9+",
+            "isSaverAward": true
+          },
+          "return": {
+            "cabin": "Upper Class",
+            "date": "2027-03-04",
+            "points": 29000,
+            "availableSeats": "9+",
+            "isSaverAward": true
+          },
+          "totalPoints": 39500
+        }
+      },
+      "upperClassOutboundeconomyReturn": {
+        "outboundCabin": "Upper Class",
+        "returnCabin": "Economy",
+        "best": {
+          "outbound": {
+            "cabin": "Upper Class",
+            "date": "2027-03-02",
+            "points": 29000,
+            "availableSeats": "9+",
+            "isSaverAward": true
+          },
+          "return": {
+            "cabin": "Economy",
+            "date": "2027-03-09",
+            "points": 59000,
+            "availableSeats": "9+",
+            "isSaverAward": false
+          },
+          "totalPoints": 88000
+        }
+      },
+      "upperClassOutboundpremiumReturn": {
+        "outboundCabin": "Upper Class",
+        "returnCabin": "Premium",
+        "best": {
+          "outbound": {
+            "cabin": "Upper Class",
+            "date": "2027-03-04",
+            "points": 29000,
+            "availableSeats": "9+",
+            "isSaverAward": true
+          },
+          "return": {
+            "cabin": "Premium",
+            "date": "2027-03-11",
+            "points": 10500,
+            "availableSeats": "9+",
+            "isSaverAward": true
+          },
+          "totalPoints": 39500
+        }
+      },
+      "upperClassOutboundupperClassReturn": {
+        "outboundCabin": "Upper Class",
+        "returnCabin": "Upper Class",
+        "best": {
+          "outbound": {
+            "cabin": "Upper Class",
+            "date": "2027-02-25",
+            "points": 29000,
+            "availableSeats": "9+",
+            "isSaverAward": true
+          },
+          "return": {
+            "cabin": "Upper Class",
+            "date": "2027-03-04",
+            "points": 29000,
+            "availableSeats": "9+",
+            "isSaverAward": true
+          },
+          "totalPoints": 58000
+        }
+      }
+    }
+  }
+}
