@@ -209,6 +209,7 @@ async function launchBrowser() {
     const { default: chromium } = await import('@sparticuz/chromium');
     const { chromium: playwrightChromium } = require('playwright-core');
 
+    chromium.setGraphicsMode = false;
     return playwrightChromium.launch({
       args: chromium.args,
       executablePath: await chromium.executablePath(),
