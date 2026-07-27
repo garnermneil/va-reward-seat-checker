@@ -512,4 +512,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { createSummary, defaultUrl, getAnalysisOptions };
+module.exports = { createSummary, defaultUrl, getAnalysisOptions, renderEmailHtml };

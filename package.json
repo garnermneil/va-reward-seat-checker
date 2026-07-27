@@ -8,10 +8,13 @@
   "main": "index.js",
   "scripts": {
     "scrape": "node index.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "start:email": "node --env-file=.env.local server.js",
+    "send:email": "node --env-file=.env.local send-email.js"
   },
   "dependencies": {
     "@sparticuz/chromium": "149.0.0",
+    "nodemailer": "^9.0.3",
     "playwright-core": "1.61.0"
   },
   "devDependencies": {

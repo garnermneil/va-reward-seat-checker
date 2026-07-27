@@ -17,6 +17,13 @@
       table { width: 100%; border-collapse: collapse; font-size: 14px; }
       th, td { padding: 10px; border: 1px solid #d7d0d9; text-align: left; vertical-align: top; }
       th { background: #eee9f0; }
+      form { display: flex; gap: 8px; }
+      input, button { box-sizing: border-box; padding: 10px; border-radius: 4px; font: inherit; }
+      input { flex: 1; border: 1px solid #a79daa; }
+      button { border: 0; background: #5b056a; color: #fff; cursor: pointer; }
+      button:disabled { cursor: wait; opacity: 0.7; }
+      .email-status { min-height: 20px; }
+      .error { color: #b00020; }
       @media (max-width: 640px) { main { margin: 0; border-radius: 0; } .best { grid-template-columns: 1fr; } table { font-size: 12px; } th, td { padding: 6px; } }
     </style>
   </head>
@@ -104,6 +111,48 @@
           if (index < result.sourceUrls.length - 1) sources.append(' · ');
         });
         app.append(sources);
+
+        addText(app, 'h2', 'Send email');
+        const emailForm = document.createElement('form');
+        const recipient = document.createElement('input');
+        recipient.type = 'email';
+        recipient.name = 'to';
+        recipient.placeholder = 'Recipient email address';
+        recipient.required = true;
+        const sendButton = addText(emailForm, 'button', 'Send summary');
+        sendButton.type = 'submit';
+        emailForm.prepend(recipient);
+        app.append(emailForm);
+        const emailStatus = document.createElement('p');
+        emailStatus.className = 'email-status';
+        emailStatus.setAttribute('role', 'status');
+        app.append(emailStatus);
+
+        emailForm.addEventListener('submit', async (event) => {
+          event.preventDefault();
+          sendButton.disabled = true;
+          emailStatus.className = 'email-status';
+          emailStatus.textContent = 'Sending email...';
+
+          try {
+            const response = await fetch('/api/email', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ to: recipient.value, summary: result }),
+            });
+            const emailResult = await response.json();
+            if (!response.ok) {
+              throw new Error(emailResult.error || 'Unable to send email.');
+            }
+
+            emailStatus.textContent = 'Email sent.';
+          } catch (error) {
+            emailStatus.className = 'email-status error';
+            emailStatus.textContent = error.message;
+          } finally {
+            sendButton.disabled = false;
+          }
+        });
       }
     </script>
   </body>

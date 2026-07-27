@@ -66,4 +66,25 @@ npm start
 
 Open <http://127.0.0.1:3000>. The local server calls the same shared summary function as the Vercel endpoint.
 
+### Sending email locally
+
+Copy `.env.example` to `.env.local` and set the SMTP values for your email provider. Keep this file private; it is ignored by Git.
+
+```sh
+cp .env.example .env.local
+npm run start:email
+```
+
+After opening a result, enter the recipient email address in the **Send email** section. The local server sends the existing HTML summary through the configured SMTP account.
+
+Send directly from the command line instead:
+
+```sh
+npm run send:email -- \
+  --to you@example.com \
+  --slot-length 7 \
+  --start-date 2027-02-25 \
+  --end-date 2027-03-15
+```
+
 Deploy the repository to Vercel. The serverless function uses `playwright-core` and `@sparticuz/chromium`; no additional Vercel configuration is required.
