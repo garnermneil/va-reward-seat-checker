@@ -58,4 +58,12 @@ node index.js \
 
 The Vercel web interface serves a start form at `/`. Enter the number of nights, earliest outbound date, and latest return date. The form calls `/api/summary`, then redirects to `/results.html` with the best combined value and all cabin combinations.
 
+Run the same interface locally:
+
+```sh
+npm start
+```
+
+Open <http://127.0.0.1:3000>. The local server calls the same shared summary function as the Vercel endpoint.
+
 Deploy the repository to Vercel. The serverless function uses `playwright-core` and `@sparticuz/chromium`; no additional Vercel configuration is required.

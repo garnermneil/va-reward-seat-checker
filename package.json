@@ -7,7 +7,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "scrape": "node index.js"
+    "scrape": "node index.js",
+    "start": "node server.js"
   },
   "dependencies": {
     "@sparticuz/chromium": "149.0.0",
